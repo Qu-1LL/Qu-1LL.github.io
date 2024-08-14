@@ -25,47 +25,94 @@ main {
     margin-top: 48px;
 }
 
-.topnav {
-    background-color: #0e0038;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #0473aa;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #0e0038;
-    color: #0473aa;
-  }
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #000000;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 450px;
+  font-size: 24px;
+  overflow: hidden;
+  position: fixed;
+  top: 5;
+  z-index: 10;
+  margin: 10px;
+}
+
+.name:hover {
+  background-color: #200d34;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgb(255, 255, 255);
+  transition: all .15s ease-in-out;
+}
+
+.ambg {
+  top: 0px;
+  z-index: 1;
+  position:relative;
+}
 
   .geometric {
     position: absolute;
     bottom: 0px;
     z-index: 0;
+    top: 805px;
 
     width: 100%;
-  height: 100%;
+  height: 203%;
   --color: rgba(114, 114, 114, 0.3);
   background-color: #191a1a;
   background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
       linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
   background-size: 55px 55px;
 }
-  
+
+.content {
+  top: 50;
+  margin: 10px;
+  margin-top: 50px;
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  color: white;
+}
+
+.amh1 {
+  font-size: 90px;
+  font-weight: 600;
+  margin-top: 42px;
+}
+
+.amh2 {
+  font-size: 30px;
+  margin-left: 200px;
+  margin-top: 5px;
+}
+
+.projects {
+  position:absolute;
+  top: 1650px;
+}

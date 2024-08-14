@@ -3,16 +3,52 @@
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
+<body>
 <h1>
-    <div class="topnav">
-        <a class="active" href="#about">About</a>
-        <a href="#contact">News</a>
-        <a href="#">Contact</a>
-        <a href="#about">About</a>
-  </div>
+    <div class="radio-inputs">
+        <label class="radio" id="radio1">
+          <input type="radio" name="radio" checked="">
+          <span class="name">About Me</span>
+        </label>
+        <label class="radio" id="radio2">
+          <input type="radio" name="radio">
+          <span class="name">Contact</span>
+        </label>
+            
+        <label class="radio" id="radio3">
+          <input type="radio" name="radio">
+          <span class="name">Projects</span>
+        </label>
+      </div>
+      <script>
+        document.getElementById('radio1').addEventListener('click', function() {
+            const section = document.getElementById('ambg');
+            section.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('radio2').addEventListener('click', function() {
+            const section = document.getElementById('geo');
+            section.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('radio3').addEventListener('click', function() {
+            const section = document.getElementById('proj');
+            section.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </h1>
-<main class="geometric">Main section here <br>
-    Still trying to fix remote issues
+    <div class="ambg" id="ambg">
+    <img src="assets/Iceland_Valley.JPG" alt="AboutMeBG" width="1519">
+    <div class="content">
+        <h1 class="amh1">Quinton Miller</h1>
+        <h2 class="amh2">Software Engineer</h2>
+    </div>
+</div>
+</body>
+<main class="geometric" id="geo">\
+
+    <div class="projects" id="proj">
+
+    </div>
 </main>
 </html>
