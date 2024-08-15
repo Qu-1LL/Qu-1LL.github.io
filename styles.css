@@ -108,11 +108,102 @@ main {
 
 .amh2 {
   font-size: 30px;
-  margin-left: 200px;
+  margin-left: 120px;
   margin-top: 5px;
 }
 
+.amh3 {
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.picbody {
+  font-size: 16px;
+  text-align: center;
+
+}
+
+.cshm1 {
+  font-size: 60px;
+  color: white;
+  margin-top: 70px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.csh1 {
+  font-size: 60px;
+  color: white;
+  margin-left: 40px;
+  margin-top: 70px;
+}
+
+.csfl {
+  float: left;
+  position:relative;
+}
+
+.csflb {
+  font-size: 16px;
+}
+
+.csfr {
+  float:right;
+  position: relative;
+  text-align: right;
+}
+
+.csbc {
+  text-align: center;
+  margin-right: 120px;
+}
+
+.csb {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #ffffff;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #c9c2ff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+ }
+ 
+ .csb:disabled {
+  pointer-events: none;
+ }
+ 
+.csb:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ .csb:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+
 .projects {
   position:absolute;
-  top: 1650px;
+  top: 800px;
+  color: white;
 }
