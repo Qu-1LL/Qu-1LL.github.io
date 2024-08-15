@@ -68,20 +68,27 @@ main {
   transition: all .15s ease-in-out;
 }
 
-.ambg {
-  top: 0px;
-  z-index: 1;
+.abmebd {
   position:relative;
 }
 
-  .geometric {
+.ambg {
+  top: 0px;
+  position:relative;
+}
+
+.iceimg {
+  z-index:1;
+  position:relative;
+}
+
+.geometric {
     position: absolute;
-    bottom: 0px;
     z-index: 0;
-    top: 805px;
+    top: 0px;
 
     width: 100%;
-  height: 203%;
+  height: 303%;
   --color: rgba(114, 114, 114, 0.3);
   background-color: #191a1a;
   background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
@@ -124,6 +131,12 @@ main {
 
 }
 
+.contact {
+  position: relative;
+  top: 0px;
+  margin-top: 50px;
+}
+
 .cshm1 {
   font-size: 40px;
   color: white;
@@ -142,6 +155,8 @@ main {
 .csfl {
   float: left;
   position:relative;
+  text-align:center;
+  width:60%;
 }
 
 .csflb {
@@ -152,6 +167,7 @@ main {
   float:right;
   position: relative;
   text-align: right;
+  width:40%;
 }
 
 .csbc {
@@ -165,7 +181,7 @@ main {
   border: 0.125em solid #ffffff;
   border-radius: 0.9375em;
   box-sizing: border-box;
-  color: #c9c2ff;
+  color: #73d9a9;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -203,7 +219,7 @@ main {
  }
 
 .projects {
-  position:absolute;
-  top: 800px;
+  position: absolute;
+  bottom: 0px;
   color: white;
 }
