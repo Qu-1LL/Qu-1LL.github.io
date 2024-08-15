@@ -2,8 +2,19 @@
 <html class="html">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        function toLinkedIn() {
+            window.location.assign("https://www.linkedin.com/in/quinton-miller-339908270/");
+        }
+        function toGitHub() {
+            window.location.assign("https://github.com/Qu-1LL");
+        }
+        function toResume() {
+            window.open("assets/QMiller_Resume.pdf");
+        }
+    </script>
 </head>
-<body>
+<body >
 <h1>
     <div class="radio-inputs">
         <label class="radio" id="radio1">
@@ -20,25 +31,10 @@
           <span class="name">Projects</span>
         </label>
       </div>
-      <script>
-        document.getElementById('radio1').addEventListener('click', function() {
-            const section = document.getElementById('ambg');
-            section.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        document.getElementById('radio2').addEventListener('click', function() {
-            const section = document.getElementById('geo');
-            section.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        document.getElementById('radio3').addEventListener('click', function() {
-            const section = document.getElementById('proj');
-            section.scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
+      
 </h1>
     <div class="ambg" id="ambg">
-    <img src="assets/Iceland_Valley.JPG" alt="AboutMeBG" width="1519">
+    <img src="assets/Iceland_Valley.JPG" alt="AboutMeBG" width="100%" id="abmebg">
     <div class="content">
         <h1 class="amh1">Quinton Miller</h1>
         <h2 class="amh2">Software Engineering Major<br></h2>
@@ -59,7 +55,13 @@
     </div>
 </div>
 </body>
-<main class="geometric" id="geo">
+<div class="geometric" id="geo">
+    <script>
+        const geo = document.getElementById('geo');
+        document.addEventListener('resize', function() {
+            geo.setAttribute('top','document.getElementById("abmebg").outerHeight');
+        });
+    </script>
     <div class="csfl">
         <h1 class="csh1">
             Professional Overview
@@ -87,8 +89,14 @@
         </div>
         <script>
             document.getElementById('linkedin').addEventListener('click', function() {
-            window.location.href = 'https://ide.geeksforgeeks.org';
-        });
+                toLinkedIn();
+            });
+            document.getElementById('github').addEventListener('click', function() {
+                toGitHub();
+            });
+            document.getElementById('resume').addEventListener('click', function() {
+                toResume();
+            })
         </script>
     </div>
 
@@ -98,5 +106,21 @@
         </div>
 
     </div>
-</main>
+</div>
+<script>
+    document.getElementById('radio1').addEventListener('click', function() {
+        const section = document.getElementById('ambg');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('radio2').addEventListener('click', function() {
+        const section = document.getElementById('geo');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('radio3').addEventListener('click', function() {
+        const section = document.getElementById('proj');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
 </html>
