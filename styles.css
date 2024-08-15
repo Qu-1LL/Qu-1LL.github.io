@@ -149,8 +149,9 @@ main {
 .csh1 {
   font-size: 40px;
   color: white;
-  margin-left: 40px;
   margin-top: 70px;
+  text-align: center;
+  margin-left:40px;
 }
 
 .csfl {
@@ -164,7 +165,9 @@ main {
   font-size: 20px;
   text-align: left;
   color: white;
-  margin-left: 100px;
+  margin-left:140px;
+  margin-right: 100px;
+  text-align: center;
 }
 
 .csfr {
