@@ -67,14 +67,20 @@
             <br>
             Find ways to reach out or explore some of my 
             projects below!
+            <br><br>
+            
         </div>
+        
     </div>
     <div class="csfr">
+        <div class="csbc">
+            <button class="csb" id="toProjects">Projects</button>  
+        </div>
         <h1 class="cshm1">
             Points of Contact
         </h1>
         <div class="csbc">
-            <br> <br>
+            <br>
         <button class="csb" id="resume">Resume</button>      
         <button class="csb" id="linkedin">Linkedin</button>
         <button class="csb" id="github">Github</button> 
@@ -134,6 +140,11 @@
     });
 
     document.getElementById('radio3').addEventListener('click', function() {
+        const section = document.getElementById('proj');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('toProjects').addEventListener('click', function() {
         const section = document.getElementById('proj');
         section.scrollIntoView({ behavior: 'smooth' });
     });
