@@ -247,6 +247,13 @@ main {
   transition: .1s linear;
 }
 
+.card-flex {
+  flex-direction: column;
+  justify-content: top;
+  
+
+}
+
 .ttimgtxt {
   margin-top: 30px;
   font-size:40px;
