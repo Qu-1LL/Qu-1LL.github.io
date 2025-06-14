@@ -20,6 +20,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+a {
+  color: #73d9a9
+}
+
 main {
     position: relative;
     margin-top: 48px;
@@ -139,7 +143,14 @@ main {
 }
 
 .cshm1 {
-  font-size: 40px;
+  font-size: 60px;
+  color: white;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cshm3 {
+  font-size: 24px;
   color: white;
   margin-top: 30px;
   text-align: center;
