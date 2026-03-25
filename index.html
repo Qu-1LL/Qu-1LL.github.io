@@ -1,162 +1,146 @@
 <!DOCTYPE html>
-<html class="html">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>Quinton Miller</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script>
-        function toLinkedIn() {
-            window.location.assign("https://www.linkedin.com/in/quinton-miller-339908270/");
-        }
-        function toGitHub() {
-            window.location.assign("https://github.com/Qu-1LL");
-        }
-        function toResume() {
-            window.open("assets/QMiller_Resume.pdf");
-        }
-        function toTTDocs() {
-            window.location.assign("https://github.com/Qu-1LL/TinyTownsAPI/blob/main/docs/DesignDoc.md")
-        }
-        function toTGDocs() {
-            window.location.assign("https://github.com/Qu-1LL/TriloGame")
-        }
-    </script>
 </head>
-<div class="geometric"></div>
-<h1>
-    <div class="radio-inputs">
-        <label class="radio" id="radio1">
-          <input type="radio" name="radio" checked="">
-          <span class="name">Welcome</span>
-        </label>
-        <label class="radio" id="radio2">
-          <input type="radio" name="radio">
-          <span class="name">Contact</span>
-        </label>
-            
-        <label class="radio" id="radio3">
-          <input type="radio" name="radio">
-          <span class="name">Projects</span>
-        </label>
-      </div>
-      
-</h1>
-    <body class="abmebd">
-    <div class="ambg" id="ambg">
-    <img src="./assets/Iceland_Valley.JPG" alt="AboutMeBG" width="100%" class="iceimg">
-    <div class="content">
-        <h1 class="amh1">Quinton Miller</h1>
-        <h2 class="amh2">Software Engineering Major<br></h2>
-        <h3 class="amh3">Computer Engineering Minor<br>Mathematics Minor<br></h3>
-        <div class="picbody">
-            
-        </div>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#top">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#projects">Projects</a>
+            </nav>
+        </header>
+
+        <main id="top">
+            <section class="hero panel">
+                <div class="hero-copy">
+                    <p class="eyebrow">Software Engineering Student</p>
+                    <h1>Quinton Miller</h1>
+                    <!-- <p class="hero-summary">
+                        Software Engineering major with minors in Computer Engineering and Mathematics.
+                    </p> -->
+
+                    <div class="hero-tags" aria-label="Academic focus">
+                        <span class="major-tag">Software Engineering Major</span>
+                        <div class="minor-tags">
+                            <span class="minor-tag">Computer Engineering Minor</span>
+                            <span class="minor-tag">Mathematics Minor</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">View Projects</a>
+                        <a class="button button-secondary" href="#contact">Get In Touch</a>
+                    </div>
+                </div>
+
+                <div class="hero-media">
+                    <img src="./assets/Iceland_Valley.JPG" alt="Iceland valley landscape">
+                    <div class="hero-note">
+                        <span class="hero-note-label">Studying at</span>
+                        <strong>Rochester Institute of Technology</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="about">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>Hi, I'm Quinton!</h2>
+                </div>
+
+                <div class="about-grid">
+                    <article class="panel about-card">
+                        <p>
+                            I started studying at Rochester Institute of Technology in autumn of 2023.
+                            Since my junior year of high school, I've worked various internships, all of
+                            which relate to the tech fields that I study.
+                        </p>
+                        <p>
+                            My free time is taken up by hobbies and personal projects. Those who know me
+                            know that I'm never doing nothing. I'm currently working on a game that you
+                            can explore right now:
+                            <a href="https://qu-1ll.github.io/TriloGame" target="_blank" rel="noreferrer">Just click here!</a>
+                        </p>
+                        <p>
+                            Find ways to reach out or explore some of my projects below.
+                        </p>
+                    </article>
+
+                    <aside class="panel facts-card">
+                        <p class="eyebrow">Snapshot</p>
+                        <h3>Current Focus</h3>
+                        <ul class="facts-list">
+                            <li>Full stack devloper</li>
+                            <li>Hands-on internships since high school</li>
+                            <li>Personal projects in game development</li>
+                            <li>Research for quantum computing</li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="section" id="contact">
+                <div class="section-heading">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Points of Contact</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="panel contact-card">
+                        <p class="eyebrow">Email</p>
+                        <a class="contact-link" href="mailto:qjm412@gmail.com">QJM412@gmail.com</a>
+                        <p class="contact-copy">
+                            Reach out directly or use the links here to explore more of my work.
+                        </p>
+                    </article>
+
+                    <div class="panel action-card">
+                        <a class="button button-primary" href="./assets/QMiller_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+                        <a class="button button-secondary" href="https://www.linkedin.com/in/quinton-miller-339908270/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a class="button button-secondary" href="https://github.com/Qu-1LL" target="_blank" rel="noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <div class="section-heading">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Self-Directed Projects</h2>
+                </div>
+
+                <div class="project-grid">
+                    <a class="project-card panel" href="https://github.com/Qu-1LL/TriloGame" target="_blank" rel="noreferrer">
+                        <div class="project-image">
+                            <img src="./assets/tgbg.jpg" alt="TriloGame project preview">
+                        </div>
+                        <div class="project-copy">
+                            <p class="project-tag">Repository</p>
+                            <h3>TriloGame</h3>
+                            <p>View the project repository for the game in progress.</p>
+                        </div>
+                    </a>
+
+                    <a class="project-card panel" href="https://github.com/Qu-1LL/TinyTownsAPI/blob/main/docs/DesignDoc.md" target="_blank" rel="noreferrer">
+                        <div class="project-image">
+                            <img src="./assets/ttbg.jpg" alt="TinyTownsAPI project preview">
+                        </div>
+                        <div class="project-copy">
+                            <p class="project-tag">Design Doc</p>
+                            <h3>TinyTownsAPI</h3>
+                            <p>Open the project design documentation.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
     </div>
-</div>
 </body>
-
-<div class="contact" id="contact">
-    <div class="csfl">
-        <h1 class="csh1">
-            Hi, I'm Quinton!
-        </h1>
-        <div class="csflb">
-            <br><br>
-            I started studying at Rochester Institute of <!--   |    -->
-            Technology in autumn of 2023. Since my junior year 
-            of high school I've worked various internships, 
-            all of which relating to the tech 
-            fields that I study. My free time is taken up by 
-            hobbies and personal projects. Those who know me 
-            know that I'm never doing nothing! I'm currently 
-            working on a game that you can explore right now! 
-            <a href="https://qu-1ll.github.io/TriloGame">Just click here!</a>
-            <br>
-            <br>
-            Find ways to reach out or explore some of my 
-            projects below!
-            <br><br>
-            
-        </div>
-        
-    </div>
-    <div class="csfr">
-        <h1 class="cshm1">
-            Points of Contact
-        </h1>
-        <h3 class="cshm3"">
-            Email: <a href="qjm412@gmail.com">QJM412@gmail.com</a>
-        </h3>
-        <div class="csbc">
-            <br>
-        <button class="csb" id="resume">Resume</button>      
-        <button class="csb" id="linkedin">Linkedin</button>
-        <button class="csb" id="github">Github</button> 
-
-        </div>
-        <script>
-            document.getElementById('linkedin').addEventListener('click', function() {
-                toLinkedIn();
-            });
-            document.getElementById('github').addEventListener('click', function() {
-                toGitHub();
-            });
-            document.getElementById('resume').addEventListener('click', function() {
-                toResume();
-            })
-        </script>
-    </div>
-</div>
-
-<div class="projects" id="proj">
-    <h1 class="projh1">
-        Self-Directed Projects
-    </h1>
-
-    <div class="card-flex">
-        <img src="./assets/ttbg.jpg" alt="ttbg" width="90%" class="ttimg" id="ttimg">
-        <br>
-        <img src="./assets/tgbg.jpg" alt="tgbg" width="90%" class="ttimg" id="tgimg">
-    </div>
-    
-
-    <div class="shmiv">
-        Triumvirate.io Coming Soon! <br>
-        <style>
-            .shmiv {
-                font-size: 40px;
-            }
-        </style>
-    </div>
-
-    <script>
-        document.getElementById('ttimg').addEventListener('click', function() {
-            toTTDocs();
-        });
-        document.getElementById('tgimg').addEventListener('click', function() {
-            toTGDocs();
-        });
-    </script>
-
-</div>
-
-<script>
-    document.getElementById('radio1').addEventListener('click', function() {
-        const section = document.getElementById('ambg');
-        section.scrollIntoView({ behavior: 'smooth' });
-    });
-
-    document.getElementById('radio2').addEventListener('click', function() {
-        const section = document.getElementById('contact');
-        section.scrollIntoView({ behavior: 'smooth' });
-    });
-
-    document.getElementById('radio3').addEventListener('click', function() {
-        const section = document.getElementById('proj');
-        section.scrollIntoView({ behavior: 'smooth' });
-    });
-
-    document.getElementById('toProjects').addEventListener('click', function() {
-        const section = document.getElementById('proj');
-        section.scrollIntoView({ behavior: 'smooth' });
-    });
-</script>
 </html>
